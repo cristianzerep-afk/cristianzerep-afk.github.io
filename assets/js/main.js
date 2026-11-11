@@ -1,7 +1,7 @@
 document.documentElement.classList.add("js-enabled");
 
 const year = document.getElementById("year");
-year.textContent = new Date().getFullYear();
+if (year) year.textContent = new Date().getFullYear();
 
 const menuButton = document.querySelector(".menu-toggle");
 const menuLabel = menuButton.querySelector(".menu-label");
@@ -103,4 +103,32 @@ if ("IntersectionObserver" in window && !prefersReducedMotion.matches) {
 
   revealElements.forEach((element) => revealObserver.observe(element));
   document.documentElement.classList.add("has-motion");
+}
+
+const themeButton = document.querySelector(".theme-toggle");
+let savedTheme = null;
+try {
+  savedTheme = localStorage.getItem("portfolio-theme");
+} catch {
+  // Theme still works for the current page when browser storage is unavailable.
+}
+if (savedTheme === "light") document.documentElement.dataset.theme = "light";
+if (themeButton) {
+  function updateThemeButton() {
+    const isLight = document.documentElement.dataset.theme === "light";
+    themeButton.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+    themeButton.title = isLight ? "Switch to dark theme" : "Switch to light theme";
+    themeButton.textContent = isLight ? "Dark" : "Light";
+  }
+  updateThemeButton();
+  themeButton.addEventListener("click", () => {
+    const isLight = document.documentElement.dataset.theme !== "light";
+    document.documentElement.dataset.theme = isLight ? "light" : "dark";
+    try {
+      localStorage.setItem("portfolio-theme", isLight ? "light" : "dark");
+    } catch {
+      // Leave the selected theme active for this page view.
+    }
+    updateThemeButton();
+  });
 }

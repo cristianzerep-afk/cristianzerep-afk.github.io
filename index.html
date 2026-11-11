@@ -4,349 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0a111d">
-    <meta
-      name="description"
-      content="Cristian Perez explores web development, software projects, and remote work."
-    >
+    <meta name="description" content="Portfolio of an aspiring Full-Stack Developer and Computer Science student with collaborative software project and internship experience.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Cristian Perez | Portfolio">
-    <meta
-      property="og:description"
-      content="Academic projects, developing skills, and remote work interests."
-    >
-    <title>Cristian Perez | Portfolio</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Aspiring Full-Stack Developer | Portfolio">
+    <meta property="og:description" content="Building practical solutions through code. Explore collaborative software projects, experience, and technical skills.">
+    <title>Aspiring Full-Stack Developer | Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/portfolio-data.js" defer></script>
     <script src="assets/js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#home" aria-label="Cristian Perez, home">
-          <span class="brand-mark" aria-hidden="true">CP</span>
-          <span>Cristian Perez<span class="brand-dot">.</span></span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-controls="primary-nav"
-          aria-expanded="false"
-        >
-          <span class="menu-icon" aria-hidden="true"></span>
-          <span class="menu-label">Menu</span>
-        </button>
-
+        <a class="brand" href="#home" aria-label="Portfolio home"><span class="brand-mark">&lt;/&gt;</span><span>Developer Portfolio<span class="brand-dot">.</span></span></a>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menu</span></button>
         <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#resume">Resume</a>
-          <a class="nav-contact" href="#contact">Contact</a>
+          <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><span aria-hidden="true">☼</span></button>
         </nav>
       </div>
     </header>
-
     <main id="main">
       <section class="hero section" id="home" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="signal-dot"></span> OPEN TO REMOTE OPPORTUNITIES</p>
-            <h1 id="hero-title">
-              Hi, I’m <span>Cristian Perez.</span><br>
-              I build, learn, and improve.
-            </h1>
-            <p class="hero-lead">
-              I’m a college student and aspiring developer in the Philippines. I’m also
-              exploring non-voice remote roles where clear writing,
-              organization, and attention to detail matter.
-            </p>
-            <div class="button-row">
-              <a class="button button-primary" href="#projects">
-                View projects <span aria-hidden="true">↗</span>
-              </a>
-              <a class="button button-outline" href="#contact">Contact me</a>
-            </div>
-            <p class="hero-note">Junior development · Virtual assistance · Data support</p>
+            <p class="eyebrow"><span class="signal-dot"></span> COMPUTER SCIENCE STUDENT · BOHOL, PHILIPPINES</p>
+            <h1 id="hero-title">Building practical <span>solutions through code.</span></h1>
+            <p class="hero-role">Aspiring Full-Stack Developer <span>|</span> BS Computer Science Student <span>|</span> Former Software Development Intern</p>
+            <p class="hero-lead">Computer Science student with hands-on experience in frontend and backend development, collaborative software projects, and technical project leadership. Currently seeking opportunities to keep learning and contribute to useful software.</p>
+            <div class="button-row"><a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a><a class="button button-outline" href="https://github.com/cristianzerep-afk" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a></div>
+            <p class="hero-note">Open to remote opportunities with flexible or part-time hours.</p>
           </div>
-
-          <aside class="hero-panel" aria-label="Portfolio overview">
-            <div class="panel-topline"><span>PORTFOLIO / 2026</span><span aria-hidden="true">✳</span></div>
-            <div class="hero-monogram" aria-hidden="true">CP<span>.</span></div>
-            <div class="panel-bottom">
-              <p>Currently focused on</p>
-              <strong>Practical projects and dependable remote work.</strong>
-              <span>Based in the Philippines <span aria-hidden="true">↗</span></span>
-            </div>
-          </aside>
+          <aside class="hero-panel" aria-label="Developer portfolio visual"><div class="panel-topline"><span>FULL-STACK / PORTFOLIO</span><span aria-hidden="true">✳</span></div><div class="code-art" aria-hidden="true"><span>const</span> developer = {<br>&nbsp; curiosity: <i>true</i>,<br>&nbsp; learning: <i>"always"</i>,<br>&nbsp; building: <i>"useful things"</i><br>};</div><div class="panel-bottom"><p>Currently focused on</p><strong>Collaborative development and practical applications.</strong><span>Bohol, Philippines</span></div></aside>
         </div>
       </section>
-
-      <section class="section section-lined" id="about" aria-labelledby="about-title">
-        <div class="container section-grid">
-          <div class="section-label"><span>01</span> ABOUT ME</div>
-          <div class="section-content reveal">
-            <h2 id="about-title">A thoughtful approach to learning and solving problems.</h2>
-            <p class="section-lead">
-              I like understanding how something works, finding what could be clearer,
-              and building a useful answer. Academic projects give me room to practice
-              development, adapt to new tools, and pay attention to the details.
-            </p>
-            <p>
-              Alongside software work, I’m interested in research, documentation, data
-              organization, and written communication. I’m looking for an entry-level
-              opportunity where I can contribute reliably while continuing to learn.
-            </p>
-            <div class="fact-row" aria-label="Quick facts">
-              <div><span>LOCATION</span><strong>Philippines</strong></div>
-              <div><span>STAGE</span><strong>College student</strong></div>
-              <div><span>INTERESTS</span><strong>Development + remote support</strong></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-lined" id="skills" aria-labelledby="skills-title">
-        <div class="container section-grid">
-          <div class="section-label"><span>02</span> SKILLS</div>
-          <div class="section-content reveal">
-            <h2 id="skills-title">Skills I’m putting into practice.</h2>
-            <p class="section-intro">
-              This portfolio demonstrates HTML, CSS, and JavaScript. The support areas
-              below reflect the kinds of entry-level work I’m developing toward.
-            </p>
-            <div class="skill-grid">
-              <div class="skill-panel">
-                <div class="panel-heading"><span class="panel-index">A</span><h3>Technical</h3></div>
-                <ul class="pill-list" aria-label="Technical skills">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Responsive layouts</li>
-                </ul>
-                <!-- Add verified languages, databases, and tools here. -->
-              </div>
-              <div class="skill-panel">
-                <div class="panel-heading"><span class="panel-index">B</span><h3>Remote work focus</h3></div>
-                <ul class="focus-list">
-                  <li>Online research</li>
-                  <li>Data organization</li>
-                  <li>Documentation and formatting</li>
-                  <li>Written communication</li>
-                  <li>Administrative support</li>
-                </ul>
-                <p class="panel-caption">Areas of interest and continued practice.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-lined" id="projects" aria-labelledby="projects-title">
-        <div class="container section-grid">
-          <div class="section-label"><span>03</span> FEATURED PROJECTS</div>
-          <div class="section-content reveal">
-            <h2 id="projects-title">Ideas explored through projects.</h2>
-            <p class="section-intro">
-              Academic work and an early concept. Project details stay concise until
-              the implementation, contribution, and outcomes are confirmed.
-            </p>
-            <div class="project-grid">
-              <article class="project-card">
-                <div class="project-head">
-                  <span>01 / ACADEMIC</span>
-                  <span class="status-badge">Academic project</span>
-                </div>
-                <div class="project-symbol" aria-hidden="true">V<span>+</span></div>
-                <h3>VaccSync</h3>
-                <p>A vaccination management related application project.</p>
-                <details class="project-details">
-                  <summary>Read project notes <span aria-hidden="true">+</span></summary>
-                  <dl>
-                    <dt>Purpose</dt><dd>Explore a digital approach to vaccination information.</dd>
-                    <dt>Problem</dt><dd>Vaccination records can be hard to organize and review.</dd>
-                    <dt>Solution</dt><dd>Implementation details to be confirmed.</dd>
-                    <dt>Key features</dt><dd>To be confirmed.</dd>
-                    <dt>Technologies</dt><dd>To be confirmed.</dd>
-                    <dt>My role</dt><dd>To be confirmed.</dd>
-                    <dt>Learning</dt><dd>To be confirmed.</dd>
-                  </dl>
-                </details>
-                <!-- Add a verified screenshot, repository, or demo link here. -->
-              </article>
-
-              <article class="project-card">
-                <div class="project-head">
-                  <span>02 / ACADEMIC</span>
-                  <span class="status-badge">Academic project</span>
-                </div>
-                <div class="project-symbol" aria-hidden="true">T<span>∥</span></div>
-                <h3>ThreadLab</h3>
-                <p>An academic exploration of threading and parallel computing concepts.</p>
-                <details class="project-details">
-                  <summary>Read project notes <span aria-hidden="true">+</span></summary>
-                  <dl>
-                    <dt>Purpose</dt><dd>Study thread-related and parallel computing ideas.</dd>
-                    <dt>Problem</dt><dd>Concurrent behavior can be difficult to reason about.</dd>
-                    <dt>Solution</dt><dd>Specific implementation to be confirmed.</dd>
-                    <dt>Key features</dt><dd>To be confirmed.</dd>
-                    <dt>Technologies</dt><dd>To be confirmed.</dd>
-                    <dt>My role</dt><dd>To be confirmed.</dd>
-                    <dt>Learning</dt><dd>To be confirmed.</dd>
-                  </dl>
-                </details>
-                <!-- Add a verified screenshot, repository, or demo link here. -->
-              </article>
-
-              <article class="project-card">
-                <div class="project-head">
-                  <span>03 / CONCEPT</span>
-                  <span class="status-badge">Planning</span>
-                </div>
-                <div class="project-symbol" aria-hidden="true">AI<span>▶</span></div>
-                <h3>AI Video Studio</h3>
-                <p>A concept for an AI-assisted video clipping and editing web app.</p>
-                <details class="project-details">
-                  <summary>Read project notes <span aria-hidden="true">+</span></summary>
-                  <dl>
-                    <dt>Purpose</dt><dd>Explore a faster video preparation workflow.</dd>
-                    <dt>Problem</dt><dd>Manual clipping and editing can take time.</dd>
-                    <dt>Solution</dt><dd>Proposed web app; no implemented features are claimed.</dd>
-                    <dt>Key features</dt><dd>Ideas to be defined during planning.</dd>
-                    <dt>Technologies</dt><dd>Not selected yet.</dd>
-                    <dt>My role</dt><dd>Concept details to be confirmed.</dd>
-                    <dt>Learning</dt><dd>To be confirmed as the concept develops.</dd>
-                  </dl>
-                </details>
-              </article>
-            </div>
-            <div class="project-footer">
-              <p>Additional project: POS &amp; Inventory.</p>
-              <a
-                href="https://github.com/cristianzerep-afk"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Browse my GitHub profile <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-lined" id="services" aria-labelledby="services-title">
-        <div class="container section-grid">
-          <div class="section-label"><span>04</span> HOW I CAN HELP</div>
-          <div class="section-content reveal">
-            <h2 id="services-title">Useful support, with room to grow.</h2>
-            <p class="section-intro">
-              These are beginner-friendly areas I’m interested in supporting. The scope
-              of each task would depend on its requirements and my current skills.
-            </p>
-            <div class="service-list">
-              <div>
-                <span>01</span><h3>Basic web development</h3>
-                <p>Simple pages, layout updates, and content edits.</p>
-              </div>
-              <div>
-                <span>02</span><h3>Data entry &amp; organization</h3>
-                <p>Careful entry, formatting, and file organization.</p>
-              </div>
-              <div>
-                <span>03</span><h3>Online research</h3>
-                <p>Finding and organizing information for review.</p>
-              </div>
-              <div>
-                <span>04</span><h3>Document preparation</h3>
-                <p>Formatting and organizing written materials.</p>
-              </div>
-              <div>
-                <span>05</span><h3>Administrative assistance</h3>
-                <p>Written updates and routine organizational tasks.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-lined" id="resume" aria-labelledby="resume-title">
-        <div class="container section-grid">
-          <div class="section-label"><span>05</span> RESUME</div>
-          <div class="section-content reveal">
-            <h2 id="resume-title">A brief look at my background.</h2>
-            <p class="section-intro">
-              I’m a college student in the Philippines building practical skills through
-              academic projects and independent learning.
-            </p>
-            <div class="resume-grid">
-              <div class="resume-item">
-                <span>EDUCATION</span><h3>College student</h3>
-                <p>School, degree, and dates can be added after confirmation.</p>
-              </div>
-              <div class="resume-item">
-                <span>PROJECTS</span><h3>Academic work</h3>
-                <p>VaccSync and ThreadLab are highlighted above.</p>
-              </div>
-              <div class="resume-item">
-                <span>SKILLS</span><h3>Web foundations</h3>
-                <p>HTML, CSS, JavaScript, and responsive page design.</p>
-              </div>
-              <div class="resume-item">
-                <span>CERTIFICATES</span><h3>To be listed</h3>
-                <p>Verified certificates can be added here.</p>
-              </div>
-            </div>
-            <p class="resume-note">
-              A download button will be added when a resume PDF is available.
-            </p>
-            <!-- Add a PDF under assets/resume/ before enabling a download link. -->
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="container contact-wrap reveal">
-          <div>
-            <p class="section-label"><span>06</span> CONTACT</p>
-            <h2 id="contact-title">Let’s start a conversation.</h2>
-            <p>
-              If you have an entry-level opportunity or a project that fits my skills,
-              I’d be glad to hear about it.
-            </p>
-            <a class="button button-primary" href="mailto:cristian1804perez@gmail.com">
-              Email Cristian <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <div class="contact-details">
-            <div>
-              <span>EMAIL</span>
-              <a href="mailto:cristian1804perez@gmail.com">cristian1804perez@gmail.com</a>
-            </div>
-            <div>
-              <span>GITHUB</span>
-              <a href="https://github.com/cristianzerep-afk" target="_blank" rel="noopener noreferrer">
-                cristianzerep-afk ↗
-              </a>
-            </div>
-            <div>
-              <span>LINKEDIN</span>
-              <a href="https://www.linkedin.com/in/cristian-perez-92a74244a/"
-                target="_blank" rel="noopener noreferrer">Cristian Perez ↗</a>
-            </div>
-            <div><span>LOCATION</span><strong>Philippines</strong></div>
-          </div>
-        </div>
-      </section>
+      <section class="section section-lined" id="about" aria-labelledby="about-title"><div class="container section-grid"><div class="section-label"><span>01</span> ABOUT</div><div class="section-content reveal"><h2 id="about-title">A developer who likes making ideas useful.</h2><p class="section-lead">I’m pursuing a Bachelor of Science in Computer Science at Bohol Island State University – Calape Campus, with an expected graduation year of 2027.</p><p>I have hands-on experience in web and mobile application development, frontend and backend integration, REST APIs, and relational databases. During my software development internship, I contributed across the stack and helped coordinate our development group as we completed a POS and inventory management system.</p><p>I enjoy exploring technologies, solving technical challenges with others, and improving through building. I also use AI-assisted tools such as ChatGPT, Claude, and Cursor to support coding, debugging, research, and problem-solving, while reviewing and taking responsibility for the work I deliver.</p><div class="fact-row"><div><span>EDUCATION</span><strong>BS Computer Science</strong></div><div><span>GRADUATION</span><strong>Expected 2027</strong></div><div><span>LOCATION</span><strong>Bohol, Philippines</strong></div></div></div></div></section>
+      <section class="section section-lined" id="experience" aria-labelledby="experience-title"><div class="container section-grid"><div class="section-label"><span>02</span> EXPERIENCE</div><div class="section-content reveal"><h2 id="experience-title">Professional experience</h2><article class="experience-card"><div class="experience-heading"><div><p class="eyebrow">ON-THE-JOB TRAINING / INTERNSHIP · BOHOL, PHILIPPINES</p><h3>Bukolabs Software Development and Services</h3><p class="role-title">Full-Stack Developer Intern &amp; Project Team Lead <span>(descriptive role)</span></p></div><span class="status-badge">Internship</span></div><p>Contributed to a completed, collaborative POS and Inventory Management System while serving as project manager of our development group. The system brings sales and inventory management functionality together for business operations.</p><ul class="detail-list"><li>Contributed to frontend interfaces and backend application functionality.</li><li>Worked with teammates to connect application components and troubleshoot development issues.</li><li>Helped coordinate group tasks and responsibilities through project completion.</li><li>Participated in collaborative software development and technical problem-solving.</li></ul><p class="confidential-note">The system is a company-owned project. Proprietary code, private repositories, and unapproved screenshots are not included here.</p></article></div></div></section>
+      <section class="section section-lined" id="projects" aria-labelledby="projects-title"><div class="container section-grid"><div class="section-label"><span>03</span> PROJECTS</div><div class="section-content reveal"><h2 id="projects-title">Selected software projects</h2><p class="section-intro">A mix of internship and academic work, with collaboration and project ownership made clear.</p><div class="project-grid">
+        <article class="project-card featured-project"><div class="project-head"><span>PROFESSIONAL INTERNSHIP</span><span class="status-badge">Completed</span></div><div class="project-symbol" aria-hidden="true">POS<span>+</span></div><h3>Integrated POS &amp; Inventory Management System</h3><p>A completed integrated system developed collaboratively during my internship at Bukolabs Software Development and Services to support sales and inventory operations.</p><div class="project-meta"><p><strong>My role</strong> Frontend and backend contributor; project team lead.</p><p><strong>Ownership</strong> Company-owned internship project.</p><p><strong>Contribution</strong> Participated in implementation, coordination, and troubleshooting with the team.</p></div><div class="tag-list"><span>Frontend</span><span>Backend</span><span>Team leadership</span></div></article>
+        <article class="project-card"><div class="project-head"><span>ACADEMIC / CAPSTONE</span><span class="status-badge">Collaborative</span></div><div class="project-symbol" aria-hidden="true">V<span>+</span></div><h3>VaccSync</h3><p>A collaborative vaccination management system project focused on organizing vaccination-related information and workflows.</p><div class="project-meta"><p><strong>My role</strong> Full-stack co-developer in a two-person team.</p><p><strong>Contribution</strong> Worked across frontend and backend functionality, database integration, REST APIs, troubleshooting, and deployment-related activities.</p></div><div class="tag-list"><span>Flutter</span><span>NestJS</span><span>PostgreSQL</span><span>REST APIs</span></div><p class="small-note">Technologies explored for this project; exact implementation details are being confirmed.</p></article>
+        <article class="project-card"><div class="project-head"><span>ACADEMIC SOFTWARE PROJECT</span><span class="status-badge">Academic</span></div><div class="project-symbol" aria-hidden="true">T<span>‖</span></div><h3>ThreadLab</h3><p>An academic project exploring threading concepts and execution behavior for Parallel and Distributed Computing.</p><div class="project-meta"><p><strong>My contribution</strong> Participated in planning, design, and development.</p><p><strong>Focus</strong> Threading and execution visualization.</p></div><div class="tag-list"><span>Parallel computing</span><span>Threading</span></div><p class="small-note">Specific implementation details and features are not listed until confirmed.</p></article>
+        <article class="project-card"><div class="project-head"><span>PERSONAL PROJECT</span><span class="status-badge">Portfolio</span></div><div class="project-symbol" aria-hidden="true">&lt;/&gt;</div><h3>Developer Portfolio</h3><p>A responsive static website presenting my experience, project work, and technical interests.</p><div class="project-meta"><p><strong>My contribution</strong> Personal portfolio design and implementation.</p><p><strong>Technologies</strong> HTML, CSS, and JavaScript.</p></div><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+      </div><div class="project-footer"><span>Have a question about a project?</span><a href="#contact">Get in touch ↓</a></div></div></div></section>
+      <section class="section section-lined" id="skills" aria-labelledby="skills-title"><div class="container section-grid"><div class="section-label"><span>04</span> SKILLS</div><div class="section-content reveal"><h2 id="skills-title">Tools and technologies I’ve worked with</h2><p class="section-intro">Skills reflect technologies used or explored across coursework and collaborative projects.</p><div class="skill-grid"><article class="skill-panel"><div class="panel-heading"><span class="panel-index">A</span><h3>Development</h3></div><ul class="pill-list"><li>React.js</li><li>Next.js</li><li>Node.js</li><li>Flutter</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article><article class="skill-panel"><div class="panel-heading"><span class="panel-index">B</span><h3>Backend &amp; data</h3></div><ul class="pill-list"><li>REST APIs</li><li>PostgreSQL</li><li>MySQL</li><li>Frontend/backend integration</li></ul></article><article class="skill-panel"><div class="panel-heading"><span class="panel-index">C</span><h3>Tools &amp; workflow</h3></div><ul class="pill-list"><li>Git</li><li>GitHub</li><li>Visual Studio Code</li><li>Collaborative development</li><li>Project coordination</li></ul></article><article class="skill-panel"><div class="panel-heading"><span class="panel-index">D</span><h3>AI-assisted development</h3></div><p class="skill-description">I use ChatGPT, Claude, and Cursor to assist with coding, debugging, research, and problem-solving. I treat generated suggestions as material to review and validate, not a substitute for understanding the code.</p></article></div></div></div></section>
+      <section class="section section-lined" id="education" aria-labelledby="education-title"><div class="container section-grid"><div class="section-label"><span>05</span> EDUCATION</div><div class="section-content reveal"><h2 id="education-title">Education</h2><article class="education-card"><div class="education-mark" aria-hidden="true">BISU</div><div><p class="eyebrow">EXPECTED GRADUATION · 2027</p><h3>Bachelor of Science in Computer Science</h3><p>Bohol Island State University – Calape Campus</p><p class="muted">Bohol, Philippines</p></div></article></div></div></section>
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-wrap reveal"><div><p class="section-label"><span>06</span> CONTACT</p><h2 id="contact-title">Let’s build something useful.</h2><p>I’m interested in entry-level software development opportunities, internships, and collaborative projects where I can contribute and continue growing.</p><a class="button button-primary" href="https://github.com/cristianzerep-afk" target="_blank" rel="noopener noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a></div><div class="contact-details"><div><span>GITHUB</span><a href="https://github.com/cristianzerep-afk" target="_blank" rel="noopener noreferrer">github.com/cristianzerep-afk ↗</a></div><div><span>LOCATION</span><strong>Bohol, Philippines</strong></div><div><span>WORK SETUP</span><strong>Remote · Flexible or part-time preferred</strong></div></div></div></section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© <span id="year">2026</span> Cristian Perez</span>
-        <span>Built with care, HTML, CSS, and JavaScript.</span>
-        <a href="#home">Back to top ↑</a>
-      </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year"></span> Aspiring Full-Stack Developer</span><span>Continuously learning, building, and improving.</span><a href="#home">Back to top ↑</a></div></footer>
   </body>
 </html>
